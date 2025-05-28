@@ -8,7 +8,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: engineering
+  owner: team-a
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
@@ -19,8 +19,8 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: engineering
-  system: thesystem
+  owner: team-a
+  system: artist-engagement-portal
   definition: |
     openapi: "3.0.0"
     info:
