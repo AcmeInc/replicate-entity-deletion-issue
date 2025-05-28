@@ -9,29 +9,3 @@ spec:
   type: service
   lifecycle: production
   owner: team-a
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: test-api
-  description:
-    $text: ./test-api-description.txt
-spec:
-  type: openapi
-  lifecycle: production
-  owner: team-a
-  system: artist-engagement-portal
-  definition: |
-    openapi: "3.0.0"
-    info:
-      version: 1.0.0
-      title: Artist API
-      license:
-        name: MIT
-    servers:
-      - url: http://artist.spotify.net/v1
-    paths:
-      /artists:
-        get:
-          summary: List all artists
-    ...
